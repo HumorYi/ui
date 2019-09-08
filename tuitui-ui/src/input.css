@@ -1,0 +1,130 @@
+/*
+ * @Author     : Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date       : 2019-08-06 18:53:34
+ * @Description:
+ * @LastEditors: Please set LastEditors
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-06 22:59:02
+ * @LastEditorsDescription:
+ */
+
+/* 表单的单行容器 S */
+.tt-form-item {
+  display : flex;
+  position: relative;
+}
+
+/* 去掉最后一行的下边框 */
+.tt-form-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+/* 表单标签 */
+.tt-form-item>.tt-form-label {
+  display: block;
+  width  : 3.5rem;
+
+  color: #666;
+}
+
+/* 表单输入框 S */
+.tt-form-item>.tt-form-body>.tt-input {
+  width : 100%;
+  border: none;
+}
+
+/* 输入框图标 */
+.tt-form-item>.tt-form-body>.tt-input-icon {
+  position  : absolute;
+  top       : 50%;
+  right     : 1rem;
+  margin-top: -.4rem;
+}
+
+/* 表单中的清空按钮 */
+.tt-form-item>.tt-form-body>.tt-input-reset {
+  color           : #fff;
+  background-color: #aaa;
+}
+
+/* 表单中的错误提示按钮 */
+.tt-form-item>.tt-form-body>.tt-input-warning {
+  color : red;
+  border: 1px solid red;
+}
+
+/* 表单输入框 E */
+
+
+/* 选中状态的单选图标 */
+.tt-form-item>.tt-radio>.tt-radio-input:checked~.tt-radio-icon {
+  color: #09BB07;
+}
+
+/* 选中状态的多选图标 */
+.tt-form-item>.tt-check>.tt-check-input:checked~.tt-check-icon {
+  border-color: rgba(0, 0, 0, 0);
+
+  color           : #fff;
+  background-color: #09BB07;
+}
+
+/* 表单的单行容器 E */
+
+
+/* common S */
+.tt-form-item>.tt-form-label,
+.tt-form-item>.tt-form-body>.tt-input,
+.tt-form-item>.tt-radio,
+.tt-form-item>.tt-check {
+  height     : 2rem;
+  line-height: 2rem;
+
+  font-size: .8rem;
+}
+
+.tt-form-item>.tt-form-body,
+.tt-form-item>.tt-radio,
+.tt-form-item>.tt-check {
+  flex: 1;
+}
+
+.tt-icon,
+.tt-form-item>.tt-form-body>.tt-input-icon,
+.tt-form-item>.tt-radio>.tt-radio-icon,
+.tt-form-item>.tt-check>.tt-check-icon {
+  width        : .8rem;
+  height       : .8rem;
+  line-height  : .8rem;
+  border-radius: 50%;
+
+  text-align: center;
+  font-size : .6rem;
+}
+
+/* 单选和多选图标 S */
+.tt-form-item>.tt-radio>.tt-radio-icon,
+.tt-form-item>.tt-check>.tt-check-icon {
+  margin-right: .5rem;
+}
+
+.tt-form-item>.tt-radio>.tt-radio-input,
+.tt-form-item>.tt-check>.tt-check-input {
+  position: absolute;
+  top     : .6rem;
+  width   : .9rem;
+  height  : .9rem;
+
+  opacity: 0;
+}
+
+.tt-form-item>.tt-radio>.tt-radio-icon,
+.tt-form-item>.tt-check>.tt-check-icon {
+  border: 1px solid #ccc;
+
+  color: rgba(0, 0, 0, 0);
+}
+/* 单选和多选图标 E */
+
+/* common E */

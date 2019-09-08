@@ -1,0 +1,60 @@
+<!--
+ * @Author: Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date: 2019-08-11 23:43:42
+ * @Description:
+ * @LastEditors:
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-11 23:57:49
+ * @LastEditorsDescription:
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../src/tuitui-ui.css">
+  <title>推推UI-ActionSheet弹出式菜单</title>
+</head>
+
+<body>
+  <div class="tt-content">
+    <h1 class="tt-panel-title">ActionSheet弹出式菜单</h1>
+    <div class="tt-panel-body">
+      <a class="tt-btn" id="js-show">显示弹出式菜单</a>
+    </div>
+  </div>
+  <div class="tt-action-sheet">
+    <div class="tt-mask"></div>
+    <div class="tt-action-sheet-wrap">
+      <div class="tt-action-sheet-header">
+        <h1 class="tt-action-sheet-title two-line-wrap">你需要做什么操作？</h1>
+      </div>
+      <div class="tt-action-sheet-body">
+        <a class="tt-action-sheet-menu">收藏</a>
+        <a class="tt-action-sheet-menu">关注</a>
+        <a class="tt-action-sheet-menu">分享给好友</a>
+      </div>
+      <div class="tt-action-sheet-footer">
+        <a class="tt-action-sheet-menu" id="js-close">取消</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var actionSheet = document.querySelector('.tt-action-sheet');
+    var mask = document.querySelector('.tt-mask');
+    // 弹出菜单
+    document.querySelector('#js-show').onclick = (e) => {
+      actionSheet.classList.add('show');
+    }
+    // 收回菜单
+    document.querySelector('#js-close').onclick = mask.onclick = (e) => {
+      actionSheet.classList.remove('show');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+/*
+ * @Author     : Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date       : 2019-08-05 01:57:02
+ * @Description:
+ * @LastEditors: Please set LastEditors
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-06 18:49:28
+ * @LastEditorsDescription:
+ */
+
+
+/* 头部导航条 */
+.tt-header {
+  position: fixed;
+  top     : 0;
+  z-index : 200;
+
+  display    : flex;
+  box-sizing : border-box;
+  width      : 100%;
+  max-width  : 640px;
+  height     : 2.3rem;
+  line-height: 2.3rem;
+
+  text-align: center;
+
+  background-color: #f8f8f8;
+  border-bottom   : 1px solid #ddd;
+}
+
+/* 左侧功能区 */
+.tt-header > .left {
+  flex-basis : 3rem;
+  flex-shrink: 0;
+  text-align : center;
+}
+
+/* 中间标题部分 */
+.tt-header > .title {
+  flex-grow: 1;
+}
+
+/* 右侧功能区 */
+.tt-header > .right {
+  flex-basis : 3rem;
+  flex-shrink: 0;
+}

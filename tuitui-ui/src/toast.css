@@ -1,0 +1,51 @@
+/* Toast提示工具 */
+.tt-toast {
+  position: fixed;
+  top     : 0;
+  left    : 0;
+  z-index: -1;
+
+  opacity: 0;
+  width  : 100%;
+  height : 100%;
+}
+
+/* 显示Toast组件内容 */
+.tt-toast-content {
+  position: absolute;
+  top     : 45%;
+  left    : 0;
+  right   : 0;
+
+  width        : 7rem;
+  margin       : auto;
+  padding      : 1rem 0;
+  border-radius: .4rem;
+
+  color           : #fff;
+  text-align      : center;
+  background-color: rgba(0, 0, 0, .6);
+  transform       : translateY(-40%);
+  transition      : transform .3s, opacity .3s;
+}
+
+/* Toast组件中的图标 */
+.tt-toast>.tt-toast-content>.tt-toast-icon {
+  font-size: 2.2rem;
+}
+
+/* Toast组件中的文本部分 */
+.tt-toast>.tt-toast-content>.tt-toast-info {
+  margin-top: .5rem;
+  font-size : .7rem;
+}
+
+/* 显示Toast组件 */
+.tt-toast.show {
+  opacity: 1;
+  z-index : 301;
+}
+
+.tt-toast.show .tt-toast-content {
+  transform: translateY(-50%);
+}

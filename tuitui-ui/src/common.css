@@ -1,0 +1,88 @@
+/*
+ * @Author     : Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date       : 2019-08-05 00:09:11
+ * @Description: 公共样式
+ * @LastEditors: Please set LastEditors
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-11 23:48:49
+ * @LastEditorsDescription:
+ */
+
+
+/* 屏幕宽度在340px至410px时，基准尺寸使用20px */
+html {
+  font-size: 20px;
+}
+
+/* body默认样式 */
+body {
+  max-width: 640px;
+  margin   : 0 auto;
+
+  background: #f8f8f8;
+
+  overflow-x                : hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 文字溢出省略符 */
+.ellipsis {
+  overflow     : hidden;
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 多行文字折行 webkit */
+.two-line-wrap{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 绝对水平垂直居中 */
+.center {
+  position: absolute;
+  top     : 0;
+  bottom  : 0;
+  left    : 0;
+  right   : 0;
+  z-index : 400;
+
+  margin: auto;
+}
+
+/* 页面蒙版 */
+.tt-mask {
+  position: fixed;
+  top     : 0;
+  bottom  : 0;
+  left    : 0;
+  right   : 0;
+  z-index : 300;
+
+  background: rgba(0, 0, 0, .5);
+}
+
+/* 没有内边距 */
+.no-padding {
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+
+/* 屏幕宽度小于340px时，基准尺寸使用18px */
+@media (max-width: 340px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+
+/* 屏幕宽度大于410px时，基准尺寸使用22px */
+@media (min-width: 410px) {
+  html {
+    font-size: 22px;
+  }
+}

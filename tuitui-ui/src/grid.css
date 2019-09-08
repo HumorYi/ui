@@ -1,0 +1,79 @@
+/*
+ * @Author     : Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date       : 2019-08-11 01:05:10
+ * @Description:
+ * @LastEditors:
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-11 01:18:18
+ * @LastEditorsDescription:
+ */
+
+/* 网格组件 */
+.tt-grid {
+  display   : flex;
+  flex-wrap : wrap;
+  border-top: 1px solid #ddd;
+}
+
+/* 网格中的格子 */
+.tt-grid>.tt-grid-item {
+  position: relative;
+
+  box-sizing: border-box;
+
+  text-align      : center;
+  background-color: #fff;
+}
+
+/* grid内容区 */
+.tt-grid>.tt-grid-item>.tt-grid-icon {
+  font-size    : 1.5rem;
+  color        : #aaa;
+  margin-bottom: .5rem;
+}
+
+.tt-grid>.tt-grid-item>.tt-grid-label {
+  font-size: .6rem;
+  color    : #333;
+}
+
+.tt-grid.border>.tt-grid-item {
+  border-bottom: 1px solid #ddd;
+}
+
+/* 两列网格 */
+.tt-grid.tt-grid-2 .tt-grid-item {
+  flex-basis    : 50%;
+  padding-top   : 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+/* 三列网格 */
+.tt-grid-3>.tt-grid-item {
+  flex-basis: 33.33%;
+  padding-top   : 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+/* 四列网格 */
+.tt-grid-4>.tt-grid-item {
+  flex-basis: 25%;
+  padding-top   : .9rem;
+  padding-bottom: .9rem;
+}
+
+/* 五列网格 */
+.tt-grid-5>.tt-grid-item {
+  flex-basis: 20%;
+  padding-top   : .6rem;
+  padding-bottom: .6rem;
+}
+
+.tt-grid-2.border .tt-grid-item:not(:nth-child(2n)),
+.tt-grid-3.border .tt-grid-item:not(:nth-child(3n)),
+.tt-grid-4.border .tt-grid-item:not(:nth-child(4n)),
+.tt-grid-5.border .tt-grid-item:not(:nth-child(5n))
+{
+  border-right: 1px solid #ddd;
+}

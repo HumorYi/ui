@@ -1,0 +1,52 @@
+/*
+ * @Author     : Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date       : 2019-08-05 01:57:06
+ * @Description:
+ * @LastEditors: Please set LastEditors
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-05 02:46:28
+ * @LastEditorsDescription:
+ */
+
+/* 底部导航栏 */
+.tt-navbar {
+  position: fixed;
+  bottom  : 0;
+  z-index : 200;
+
+  display   : flex;
+  box-sizing: border-box;
+  width     : 100%;
+  max-width : 640px;
+  height    : 2.5rem;
+  padding-top: .1rem;
+
+  text-align: center;
+
+  background-color: #f8f8f8;
+  border-top      : 1px solid #ddd;
+}
+
+/* 导航项目 */
+.tt-navbar>.navbar-item {
+  flex : 1;
+  color: #808080;
+}
+
+/* 被选中的样式 */
+.tt-navbar>.navbar-item.active {
+  color: #09BB07;
+}
+
+/* 导航图标 */
+.tt-navbar>.navbar-item>.icon {
+  padding-bottom: .1rem;
+  font-size     : 1.1rem;
+}
+
+/* 导航名称 */
+.tt-navbar>.navbar-item>.name {
+  display  : block;
+  font-size: .5rem;
+}

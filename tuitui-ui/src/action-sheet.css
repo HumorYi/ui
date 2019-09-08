@@ -1,0 +1,96 @@
+/*
+ * @Author     : Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date       : 2019-08-11 23:44:31
+ * @Description:
+ * @LastEditors:
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-11 23:56:43
+ * @LastEditorsDescription:
+ */
+
+/* 弹出菜单容器，默认隐藏在屏幕的下面 */
+.tt-action-sheet>.tt-action-sheet-wrap {
+  position: fixed;
+  bottom  : 0;
+  left    : 0;
+  right   : 0;
+  z-index : 301;
+
+  max-width: 640px;
+  margin   : auto;
+
+  background-color: #eee;
+  transform       : translateY(100%);
+  transition      : transform .3s ease;
+}
+
+/* 菜单弹出的时候，改变容器位移 */
+.tt-action-sheet.show .tt-action-sheet-wrap {
+  transform: translateY(0);
+}
+
+/* 默认隐藏蒙版 */
+.tt-action-sheet>.tt-mask {
+  opacity: 0;
+  /* 屏蔽元素的点击事件 */
+  pointer-events: none;
+  transition    : opacity .3s ease;
+}
+
+/* 菜单弹出的时候显示蒙版 */
+.tt-action-sheet.show>.tt-mask {
+  opacity       : 1;
+  pointer-events: auto;
+}
+
+/* 弹出菜单头部 */
+.tt-action-sheet .tt-action-sheet-header {
+  display      : flex;
+  align-items  : center;
+  height       : 3rem;
+  padding-left : 2rem;
+  padding-right: 2rem;
+
+  text-align      : center;
+  background-color: #fff;
+}
+
+/* 头部标题，用来描述菜单作用 */
+.tt-action-sheet .tt-action-sheet-header>.tt-action-sheet-title {
+  flex       : 1;
+  line-height: 1rem;
+
+  overflow: hidden;
+
+  font-size  : .7rem;
+  font-weight: normal;
+  color      : rgba(0, 0, 0, .3);
+}
+
+/* 中间主要内容区 */
+.tt-action-sheet .tt-action-sheet-body {
+  border-top      : 1px solid rgba(0, 0, 0, .1);
+  background-color: #fff;
+}
+
+/* 菜单尾部，通常用来放取消按钮 */
+.tt-action-sheet .tt-action-sheet-footer {
+  margin-top      : .3rem;
+  background-color: #fff;
+}
+
+/* 每个菜单项 */
+.tt-action-sheet .tt-action-sheet-menu {
+  display    : block;
+  height     : 2.8rem;
+  line-height: 2.8rem;
+
+  text-align: center;
+  font-size : .8rem;
+}
+
+/* 菜单项的边框控制 */
+.tt-action-sheet .tt-action-sheet-menu+.tt-action-sheet-menu {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}

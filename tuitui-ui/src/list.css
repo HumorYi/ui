@@ -1,0 +1,125 @@
+/*
+ * @Author     : Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date       : 2019-08-10 21:55:47
+ * @Description:
+ * @LastEditors:
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-09-07 09:32:43
+ * @LastEditorsDescription:
+ */
+
+/* 简单文字列表里每一行的容器 */
+.tt-list>.tt-list-item {
+  position     : relative;
+  padding      : .5rem 1rem;
+  border-bottom: 1px solid #eee;
+
+  font-size       : .8rem;
+  color           : #333;
+  background-color: #fff;
+}
+
+.tt-list .item-content-wrap>.item-title {
+  color: #333;
+  
+}
+
+
+/* 复杂详情列表里每一行的容器 */
+.tt-list.tt-list-detail>.tt-list-item {
+  display: flex;
+}
+
+/* 列表项的图片容器 */
+.tt-list.tt-list-detail .item-img-wrap {
+  flex         : 0 0 5rem;
+  height       : 5rem;
+  margin-right : .5rem;
+  border-radius: .2rem;
+
+  overflow: hidden;
+}
+
+/* 列表项的图片 */
+.tt-list.tt-list-detail .item-img-wrap>.item-img {
+  width : 100%;
+  height: 100%;
+}
+
+/* 列表项的文字区域 */
+.tt-list.tt-list-detail .item-content-wrap {
+  position       : relative;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  flex           : 1;
+}
+
+/* 列表项的标题 */
+.tt-list.tt-list-detail .item-content-wrap>.item-title {
+  height            : 2rem;
+  line-height       : 1rem;
+  font-size         : .8rem;
+  font-weight       : normal;
+  overflow          : hidden;
+}
+
+/* 列表项的价格字段 */
+.tt-list.tt-list-detail .item-content-wrap>.item-price-wrap {
+  font-size  : .8rem;
+  font-weight: 600;
+  color      : #e0652f;
+}
+
+/* 列表项的描述字段 */
+.tt-list.tt-list-detail .item-content-wrap>.item-desc-wrap {
+  color    : #999;
+  font-size: .6rem;
+}
+
+
+/* 复杂缩略图列表里每一行的容器 */
+.tt-list.tt-list-thumbnail>.tt-list-item {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  height: 9rem;
+  padding: 1rem .5rem;
+}
+
+.tt-list.tt-list-thumbnail>.tt-list-item:nth-of-type(2n+1) {
+  border-right: 1px solid #eee;
+}
+
+/* 列表项的图片容器 */
+.tt-list.tt-list-thumbnail .item-img-wrap {
+  height       : 5rem;
+  margin-bottom: .4rem;
+  overflow: hidden;
+}
+
+/* 列表项的图片 */
+.tt-list.tt-list-thumbnail .item-img-wrap>.item-img {
+  width : 100%;
+  height: 100%;
+}
+
+/* 列表项的优惠价格 */
+.tt-list.tt-list-thumbnail .item-price-discounts-wrap {
+  font-size  : 1rem;
+  font-weight: 600;
+  color      : #e0652f;
+}
+
+/* 列表项的原来价格 */
+.tt-list.tt-list-thumbnail .item-price-original-wrap {
+  font-size  : .5rem;
+  color      : #999;
+}
+
+/* 列表项的描述字段 */
+.tt-list.tt-list-thumbnail .item-desc-wrap {
+  color    : #999;
+  font-size: .8rem;
+}

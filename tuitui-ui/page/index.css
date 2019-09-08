@@ -1,0 +1,60 @@
+/*
+ * @Author     : Bamboo
+ * @AuthorEmail: bamboo8493@126.com
+ * @Date       : 2019-08-31 20:53:10
+ * @Description:
+ * @LastEditors:
+ * @LastEditorsEmail:
+ * @LastEditTime: 2019-08-31 20:56:49
+ * @LastEditorsDescription:
+ */
+
+/* 缩小网格的高度 */
+.page-index .tt-grid>.tt-grid-item {
+  padding: .5rem 0;
+}
+
+/* 网格导航的颜色设置 */
+.page-index .tt-grid>.tt-grid-item.item-1>.tt-grid-icon {
+  color: #f93c32;
+}
+
+.page-index .tt-grid>.tt-grid-item.item-2>.tt-grid-icon {
+  color: #1dbdd4;
+}
+
+.page-index .tt-grid>.tt-grid-item.item-3>.tt-grid-icon {
+  color: #eb1d57;
+}
+
+.page-index .tt-grid>.tt-grid-item.item-4>.tt-grid-icon {
+  color: #00bb4b;
+}
+
+.page-index .tt-grid>.tt-grid-item.item-5>.tt-grid-icon {
+  color: #fd9707;
+}
+
+.page-index .tt-grid>.tt-grid-item.item-6>.tt-grid-icon {
+  color: #fc5024;
+}
+
+.page-index .tt-grid>.tt-grid-item.item-7>.tt-grid-icon {
+  color: #9a00b0;
+}
+
+.page-index .tt-grid>.tt-grid-item.item-8>.tt-grid-icon {
+  color: #f3443c;
+}
+
+/* 标题导航 */
+.tt-content .tt-panel-title > .tt-panel-link{
+  float: right;
+  margin-right: 1rem;
+  color: #aaa;
+}
+
+/* 调整间距 */
+.page-index .yp-category{
+  margin-bottom: .5rem;
+}
